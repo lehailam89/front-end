@@ -1,0 +1,318 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: transparent;
+}
+.header-top{
+    background: #E61B30;
+    color: var(--color-two);
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-main .inner-wrap{
+    display: flex;
+    
+}
+/* End Header */
+
+.header-main .inner-logo img{
+    height: 48px;
+    width: auto;
+    margin-right: 10px;
+}
+.header-main .inner-logo span{
+    font-size: 22px;
+    font-weight: 600;
+}   
+.header-main .inner-logo a{
+    color: #DB0E0E;
+    display: flex;
+    align-items: center;
+}
+.header-main .inner-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.header-main .inner-menu ul li a{
+    color: #DB0E0E;
+    font-size: 18px;
+}
+
+.header-main .inner-menu ul li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header-main .inner-contact{
+    font-size: 18px;
+    color: #DB0E0E;
+}
+
+.header-main .inner-social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+.header-main .inner-social ul li a{
+    font-size: 26px;
+    margin-left: 15px;
+}
+.header-main .inner-menu-mobile{
+    display: none;
+    font-size: 24px;
+    color: rgba(255, 0, 0, 0.852);
+}
+
+@media (max-width: 768px) {
+    .header-top{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+   .header-main .inner-contact{
+    display: none;
+   }
+}
+@media (max-width: 768px) {
+    .header-main .inner-menu{
+     display: none;
+    }
+    .header-main .inner-social{
+        display: none;
+    }
+    .header-main .inner-menu-mobile{
+        display: block;
+    }
+    
+ }
+
+
+.header-main .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.header{
+    box-shadow: 0 1px 3px 0 #0000007e;
+}
+
+/* Section-one */
+.section-one{
+    background: #F0F2F5;
+    padding: 100px 0;
+}
+.section-one .inner-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-one .inner-wrap .inner-content{
+    width: 50%;
+}
+.section-one .inner-wrap .inner-image{
+    width: 50%;
+}
+.section-one .inner-wrap .inner-image img{
+    width: 500px;
+    height: 500px;
+}
+
+.section-one .inner-wrap .inner-content .inner-title{
+    font-size: 60px;
+    color: #C70101;
+}
+.section-one .inner-wrap .inner-content .inner-desc{
+    font-size: 20px;
+    color: #C70101;
+    margin-bottom: 40px;
+}
+.section-one .inner-wrap .inner-content .inner-list{
+    display: flex;
+    margin-bottom: 40px;
+}
+.section-one .inner-wrap .inner-content .inner-list .inner-item{
+    width: 50%;
+    color: #DB0E0E;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.section-one .inner-wrap .inner-content .inner-list .inner-item i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* End Section-one */
+
+/* Butttons */
+.button{
+    background: #FFC800;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 45px;
+    border: 2px solid #FFC800;
+    display: inline-block;
+}
+.button:hover{
+    color: #0000005d;
+    background: #fff;
+}
+.section-one .inner-image .inner-sale{
+    position: absolute;
+    top: 200px;
+    right: 250px;
+    background: #FFC800;
+    color: blue;
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-one .inner-image .inner-sale span:nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+}
+.section-one .inner-image .inner-sale span:nth-child(2){
+    font-size: 40px;
+    font-weight: 600;
+}
+@media (max-width: 992px){
+    .section-one .inner-content{
+        width: 100%;
+        order: 1;
+    }
+    .section-one .inner-image{
+        width: 100%;
+    }
+}
+
+/* End Bottons */
+
+/* Section two */
+.section-two{
+    padding: 100px 0;
+}
+.section-two img{
+    width: 200px;
+}
+.section-two .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+
+}
+.section-two .inner-box{
+    width: calc(100%/3 - 20px);
+    height: 100%;
+    aspect-ratio: 4/3;
+    /* spect-ratio: tỷ lệ 4/3 width/height của element */
+    position: relative;
+    overflow: hidden;
+}
+
+.section-two .inner-box img{
+    width: 100%;
+    height: 100%;
+    /* object-fit ảnh tự co dãn hết width height mà không bị vỡ */
+    object-fit: cover;
+    transition: all 0.6s;
+}
+
+.section-two .inner-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 17, 255, 0.689);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+  
+}
+.section-two .inner-content .inner-tag{
+    background: #40B395;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+}
+.section-two .inner-box .inner-title{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section-two .inner-box:hover img{
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px){
+    .section-two .inner-wrap{
+        flex-wrap: wrap;
+    }
+
+    .section-two .inner-box{
+        width: 100%;
+        aspect-ratio: 2/1;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media (max-width: 576px){
+    .section-two .inner-box{
+        aspect-ratio: 1/1;
+        
+    }
+}
+/* End Section Two */
+
+/* Section Three */
+.section-three{
+    background: #F0F2F5;
+    padding: 100px 0;
+}
+.section-three .inner-head .inner-title{
+    font-size: 60px;
+    color: #C70101;
+    margin: 0;
+}
+.section-three .inner-head .inner-desc{
+    font-size: 24px;
+    margin: 0;
+}
+.section-three .inner-head{
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.section-three .inner-wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-three .inner-wrap .inner-box{
+    text-align: center;
+    width: calc(100% / 3);
+}
+.section-three .inner-wrap .inner-icon{
+    font-size: 40px;
+    color: #C70101;
+}
+
+.section-three .inner-title{
+    color: #C70101;
+}
+/* End Section Three */

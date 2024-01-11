@@ -1,0 +1,192 @@
+/* Header */
+
+/* body {
+    margin: 0;
+    padding: 0;
+  } */
+
+  .header {
+    position: sticky;
+    top: 0;
+    background-color: #fff; 
+    z-index: 1000; /* Đảm bảo header luôn hiển thị phía trước */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  /* .container {
+    width: 80%; 
+    margin: 0 auto;
+  } */
+
+.header-main{
+    background: #EFEFEF;
+}
+.inner-wrap{
+    padding: 30px 0;
+}
+.header-main .inner-logo img{
+    height: 48px;
+    width: auto;
+    margin-right: 10px;
+}
+.header-main .inner-logo span{
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+}
+.header-main .inner-logo span:hover{
+    color: #6E6E6E;
+}
+.header-main .inner-logo a{
+    display: flex;
+    align-items: center;
+}
+.header-main .inner-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+.header-main .inner-menu ul li a{
+    color: #000;
+    font-size: 18px;
+}
+.header-main .inner-menu ul li a:hover{
+    color: #6E6E6E;;
+}
+.header-main .inner-menu ul li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header-main .inner-social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    
+}
+.header-main .inner-social ul li a{
+    font-size: 26px;
+    margin-left: 15px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.header-main .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.header{
+    box-shadow: 0 1px 3px 0 #0000007e;
+}
+/* End Header */
+
+/* Section One */
+.section-one{
+    height: 575px;
+    width: auto;
+    background-image: url("https://fsecourse.com/wp-content/uploads/2023/02/danial-igdery-FCHlYvR5gJI-unsplash-1536x1024.jpg");
+    color: #fff;
+    background-size: 100% 100%;
+
+}
+.section-one .container .inner-wrap{
+    padding-top: 100px;
+    padding-left: 150px;
+}
+.section-one .inner-title2{
+    font-size: 50px;
+    font-weight: 700;
+}
+.section-one .inner-list{
+    display: flex;
+}
+.section-one .inner-list .inner-td1{
+    margin-right: 20px;
+}
+.section-one .inner-td1{
+    background: #F7D9C4;
+    padding: 16px 41.6px;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+.section-one .inner-td1:hover{
+    background-color: #fff;
+}
+.section-one .inner-td2{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 16px 41.6px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.section-one .inner-td2:hover{
+    background-color: #F7D9C4;
+    color: #000;
+}
+
+
+
+/* End Section One */
+
+/* Section-Three */
+.section-three .inner-head{
+    padding: 50px 60px;
+}
+
+.section-three .inner-list1 ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* End Section Three */
+
+/* Section Four */
+.section-four{
+    background: #EFEFEF;
+}
+.section-four .container .inner-wrap .inner-title .title{
+        text-align: center;
+        font-size: 61px;
+}
+
+.section-four .container .inner-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 150px;
+}
+.section-four .container .inner-box img{
+    width: 288px;
+    height: 225px;
+    border-radius: 15px;
+}
+.section-four .container .inner-box .inner-content1{
+    font-size: 16px;
+    color: #777777;
+}
+.section-four .container .inner-box .inner-nd1{
+    font-size: 25.6px;
+    font-weight: 700;
+}
+
+
+/* End Section Four */
+
+/* Button */
+.button{
+    background: #000;
+}
+.button .inner-content{
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+}
+/* End Button */
