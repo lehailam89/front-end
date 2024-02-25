@@ -1,0 +1,88 @@
+
+/* Header */
+
+
+.header{
+    background: #F5F5F5;
+}
+.header .inner-main{
+    display: flex;
+    justify-content: space-between; 
+    padding: 5px 15px;
+}
+.header .inner-list ul{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+}
+.header .inner-main .inner-list ul li a{
+    margin-left: 20px;
+    color: #111111;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* End Header */
+
+/* Section One */
+.section-one .inner-main{
+    display: flex;
+    justify-content: space-between;
+}
+.section-one .inner-menu ul{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+}
+.section-one .inner-main .inner-menu ul li a{
+    margin-right: 20px;
+    color: #111111;
+    text-decoration: none;
+    font-size: 19px;
+
+}
+.section-one .inner-main .inner-logo img{
+    width: 70px;
+    height: auto;
+}
+
+/* End Section One */
+
+/* Section Two */
+.section-two{
+    background: #F5F5F5;
+}
+.section-two .inner-wrap p{
+    text-align: center; 
+    margin-bottom: 0;
+}
+.section-two .container .inner-wrap .inner-title{
+    font-size: 18px;
+}
+.section-two .container .inner-wrap .inner-desc1{
+    font-size: 12px;
+}
+.section-two .container .inner-wrap .inner-desc2{
+    font-weight: 600;
+}
+.section-two .inner-wrap{
+    padding: 10px 0;
+}
+/* End Section Two */
+
+/* Section Three */
+.section-three .inner-image{
+    width: 100%;    
+    aspect-ratio: 3/4;
+    overflow: hidden;
+}
+.section-three .container .inner-title{
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+.section-three .inner-content{
+    padding-top: 30px;
+    font-size: 19px;
+}
+/* End Section Three */

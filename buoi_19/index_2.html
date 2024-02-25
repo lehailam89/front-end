@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="h2">
+        <span>Nội dung thẻ h2-span 1</span>
+        <span>Nội dung thẻ h2-span 2</span>
+        <span>Nội dung thẻ h2-span 3</span>
+    </h2>
+    <div id="box"></div>
+
+    <div class="product-item" data-id="211312" data-category="123">
+        ảnh
+        tiêu đề
+        giá
+    </div>
+    <div class="product-item" data-id="12321312" data-category="123">
+        ảnh
+        tiêu đề
+        giá
+    </div>
+
+    <h3 id="h3">Nội dung của thẻ h3</h3>
+
+    <Script>
+        const h2 = document.querySelector("#h2");
+        const contentH2 = h2.innerHTML;
+        // const contentH2 = h2.textContent;
+        // const contentH2 = h2.innerText;
+        console.log(contentH2);
+
+        const box = document.querySelector("#box");
+        box.innerHTML = contentH2;  //
+        console.log(box);
+    </Script>
+
+
+    <script>
+        // const productList = document.querySelectorAll(".product-item");
+        // let cart = [];
+
+        // console.log(productList); 
+        // [...productList].forEach(item=>{
+        //     const dataId = item.getAttribute("data-id");
+        //     cart.push(dataId);
+        //     item.setAttribute("data-category", "456");
+        //     item.setAttribute("class", "product-item product-test");
+        // })
+        // console.log(cart);
+    </script>
+
+
+    <Script>
+        // const h3 = document.querySelector("#h3");
+        // h3.style.color = "red";
+        // h3.style.backgroundColor = "yellow";
+        // console.log(h3);
+    </Script>
+
+    <script>
+        
+    </script>
+</body>
+</html> 

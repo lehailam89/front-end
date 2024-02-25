@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="openTab()">Mở Tab mới</button>
+    <button onclick="closeTab()">Đóng Tab cũ</button>
+    <button onclick="reloadWeb()">Reload</button>
+    <button onclick="login()">Đăng nhập</button>
+    <button onclick="updateInfor()">Cập nhật thông tin</button>
+
+
+    <script>
+
+        console.log(window);
+        console.log(window.innerHeight); 
+        console.log(window.innerWidth);
+
+        
+        let tab;
+
+
+        function openTab(){
+            tab = window.open("http://127.0.0.1:5500/buoi_18/28tech.html", "_blank", "width=1200, height=600, top=200, left=300");
+        }
+        function closeTab(){
+            tab.close();    
+        }
+
+        console.log(window.location.href);
+
+        console.log(window.location);
+        function reloadWeb(){
+            window.location.reload();
+        }
+
+        console.log(window.history);
+
+        function login(){
+            if(true){
+                document.cookie = 'token=eqwewqeqeqe';
+                document.cookie = 'email=lehailamltk@gmail.com; expires=Thu, 01 Jan 2025 00:00:00 UTC';
+                document.cookie = 'fullName=Lê Hải Lâm';
+            } 
+        }
+
+        function updateInfor(){
+            document.cookie = 'email=test@gmail.com';
+        }
+
+
+        let allcookie = document.cookie;
+        console.log(allcookie);
+
+
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script>
+        let inforUser = {
+            fullName: "Lê Hải Lâm",
+            email: "lehailamltk@gmail.com",
+            age: "20",
+        };
+        let inforUserJSON = `
+        {
+            "fullName": "Lê Hải Lâm",
+            "email": "lehailamltk@gmail.com",
+            "age": "20" 
+        }
+        `;
+        console.log(inforUserJSON);
+      
+        let inforUserJSONtoJS = JSON.parse(inforUserJSON);
+
+        let inforUserJStoJSON = JSON.stringify(inforUserJSONtoJS);  
+
+        console.log(inforUserJSONtoJS);
+        console.log(inforUserJSONtoJS.fullName);
+        console.log(inforUserJStoJSON);
+        </script>
+
+        <script> -->
+
+            <!-- // let jsonNumber = `5`;
+
+            // console.log(jsonNumber);
+            // console.log(JSON.parse(jsonNumber)); -->
+
+
+        <!-- </script> -->
+
+            <div id="listUser" class="user-list"></div>
+
+        <script>
+            //example five: value's JSON is array
+
+            let jsonArray = `
+            [
+                {
+                    "id": 1,
+                    "name": "Le Van A",
+                    "email": "levana@gmail.com"
+                },
+                {
+                    "id": 2,
+                    "name": "Le Van B",
+                    "email": "levanb@gmail.com"
+                },
+                {
+                    "id": 3,
+                    "name": "Le Van C",
+                    "email": "levanc@gmail.com"
+                }
+            ]`;
+
+            let listUser = JSON.parse(jsonArray);
+
+            let htmls = "";
+            listUser.forEach(item => {
+                htmls += `
+                <div class="user-item">
+                    <div class="inner-name">${item.name}</div>
+                    <div class="inner-email">${item.email}</div>    
+                `
+                ;
+            });
+
+            const divListUser = document.querySelector("#listUser");
+            divListUser.innerHTML = htmls;
+
+            console.log(htmls);
+        </script>
+</body>
+</html>

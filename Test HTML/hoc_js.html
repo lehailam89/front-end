@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+//Array
+        var listUser = [
+            "Le Hai Lam",
+            "Le Hai A",
+            "Le Hai B"
+        ]
+        console.log(listUser);
+        console.log(listUser[1]);
+//End Array
+
+//Object
+    var inforUser = {
+        name: "Lê Hải Lâm",
+        age: 18,
+        address: "Hà Nội",
+        hometown: "Hưng Yên"
+    }
+    console.log(inforUser);
+    console.log(inforUser.hometown);
+//End Object
+
+
+    // alert("Hello World!");
+
+//SetInterval
+    // setInterval(function(){
+    //     console.log("Hello World!");
+    // }, 2000);
+
+//End SetInterval
+
+        // var name = "Lê Hải Lâm";
+        // console.log(name.toUpperCase());
+        // console.log(name.toLowerCase());
+
+
+        // for(var i=0;i<=10000;i++){
+        //     console.log("Đây là giây thứ:.....",i);
+        // }
+
+        // var a =1;
+        // while(a <10000){
+        //     console.log("Đây là giá trị a thứ: ", a);
+        //     a++;
+        // }
+
+        var mang = [1, 2, 3, 4, 5, 6, 7, 8 ,9, 10]
+        function tinhTongSoChan(array){
+            let tong = 0;
+            for(const item of array){
+                if(item%2==0){
+                    tong+=item;
+                }
+            }
+            return tong;
+        }
+
+        let ketQua = tinhTongSoChan(mang);
+        console.log(ketQua);
+
+
+</script>
+
+</body>
+</html>

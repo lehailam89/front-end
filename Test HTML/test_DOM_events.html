@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .card_input{
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+    
+    <button class="reduce" >-</button>
+    <input type="text" class="card_input" value="1">
+    <button class="add">+</button>
+
+    <script>
+        const buttonReduce = document.querySelector('.reduce');
+        const buttonAdd = document.querySelector('.add');
+        const cardInput = document.querySelector('.card_input');
+
+        buttonReduce.onclick = function() {
+            cardInput.value = parseInt(cardInput.value) - 1;
+        }
+        buttonAdd.onclick = function() {
+            cardInput.value = parseInt(cardInput.value) + 1;    
+        }
+    </script>
+</body>
+</html>
