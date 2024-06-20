@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // const tinhTong = function(){
+        //     let tong=0;
+        //     for(item of arguments){
+        //         tong+=item;
+        //     }
+        // return tong;
+        // }
+        // let ketQua =tinhTong(1,2,3,4);
+        // console.log(ketQua);
+
+        // const tinhTong = (...test) =>{
+        //     console.log(test);
+        //     console.log("OK");
+        // }
+        // let ketQua = tinhTong(1,2,3,4);
+        // console.log(ketQua);
+
+        // bài tập 1: tính tổng các số chẵn của mảng var mang =[1, 2, 3, 4, 5, 6, 7, 8 ,9, 10]
+        // var mang = [1, 2, 3, 4, 5, 6, 7, 8 ,9, 10]
+        // function tinhTongSoChan(array){
+        //     let tong = 0;
+        //     for(const item of array){
+        //         if(item%2==0){
+        //             tong+=item;
+        //         }
+        //     }
+        //     return tong;
+        // }
+
+        // let ketQua = tinhTongSoChan(mang);
+        // console.log(ketQua);
+
+        // bài tập 2: nhập vào 1 số n sau đó tình giá trị của biểu thức
+        // Viết chương trình cho người dùng nhập vào số n lớn hơn 0, sau đó dựa vào n tính giá trị của biểu thức:
+        //     bieuThuc = 1 / n + 2 / n + 3 / n + ...+n / n.
+
+        function tinhBieuThuc(n) {
+            let ketQua=0;
+            for(let i=1;i<=n;i++){
+                ketQua+=i/n;
+            }
+            return ketQua;
+        }
+        let n;
+        do{
+            n=prompt("Nhập n: ");
+            n=parseInt(n);
+            if(n<=0){
+                console.log("Vui lòng nhập số lớn hơn 0.");
+            }
+            else{
+                let ketQua = tinhBieuThuc(n);
+                console.log(ketQua);
+            }
+        }while(n<=0);
+</script>
+</body>
+</html>

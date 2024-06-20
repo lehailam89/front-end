@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .light{
+            background: lightblue;
+        }
+        .dark{
+            background: darkblue;
+            color: #fff;
+        }
+
+        .test-2{
+            color: blue;
+        }
+
+    </style>
+   
+    <div class="light" id="box">Nội dung của thẻ div</div>
+
+    <ul id="menu">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+    
+    <h2>Thẻ h2 01</h2>
+    <h2>Thẻ h2 02</h2>
+    <h2>Thẻ h2 03</h2>
+    <h2>Thẻ h2 04</h2>
+    <h2>Thẻ h2 05</h2>
+    <h2>Thẻ h2 06</h2>
+    <h2>Thẻ h2 07</h2>
+
+    <h3 class="test">Thẻ 01</h3>
+    <h4 class="test">Thẻ 02</h4>
+    <h2 class="test">Thẻ 03</h2>
+    <h1 class="test">Thẻ 04</h1>
+    <h5 class="test">Thẻ 05</h5>
+
+    <div class="box-1">
+        <div class="box-2">
+            <h2>
+                <a href="#" class="link">Nội dung của thẻ a</a>
+            </h2>
+            <h2>
+                <a href="#" class="link">Nội dung của thẻ a</a>
+            </h2>
+        </div>
+    </div>
+
+    <style>
+        .box-1 .box-2 h2 .link{
+            background-color: yellow;
+        }
+        .box-1 .box-2 h2 .link.active{
+            background-color: orange;
+        }
+    </style>
+
+
+    <script>
+        console.log(document);
+
+        const box = document.getElementById("box");
+        box.classList.add("dark");
+
+        console.log(box);
+        
+
+        const menu = document.getElementById("menu");
+        console.log(menu);
+        
+        var element = document.getElementsByClassName("test");
+        element[0].classList.add("class-test");
+        console.log(element);
+    </script>
+
+    <script>
+        // const listH2 = document.getElementsByTagName("h2");
+        // console.log(listH2);
+        // console.log(listH2[4]);
+
+        // const listTest=document.getElementsByClassName("test");
+        // // console.log(listTest); 
+
+        // // console.log(...listTest);
+
+
+
+        // [...listTest].forEach(item => {
+        //     item.classList.add("test-2");
+        //     item.classList.remove("test");
+        // });
+    </script>
+
+
+    <script>
+        // const element = document.querySelector(".box-1 .box-2 h2 .link");
+        // element.classList.add("active"); 
+        // console.log(element);
+
+        // const elements = document.querySelectorAll(".box-1 .box-2 h2 .link");
+        // // elements.classList.add("test"); 
+        // console.log(elements);
+
+
+        // const box = document.querySelectorAll(".test");
+        // console.log(box);
+    </script>
+
+
+    <script>
+        
+    </script>
+
+</body>
+</html>     

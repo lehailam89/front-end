@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // console.log(this);
+        // console.log(window.location.href);
+        // console.log(this.location.href);
+    </script>
+    
+
+    <script>
+        // "use strict";
+
+        // function test(){
+        //     console.log(this);
+        // }
+        // test();
+    </script>
+
+    <button id="button">Button</button>
+    <ul id="menu">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+    <script>
+
+        // const button = document.querySelector("#button");
+
+        // button.addEventListener("click", function() {
+        //     console.log(this);
+        // });
+
+        // const listItem = document.querySelectorAll("#menu li");
+        // console.log(listItem);
+        
+        // [...listItem].forEach(function(item){
+        //     item.addEventListener("click", function(){
+        //         console.log(this);
+        //         console.log(item);
+        //     });
+        // });
+    </script>
+
+    <script>
+        
+        let info = {
+            fullName: "Lê Hải Lâm",
+            age: 18,
+            email: "lehailamltk@gmail.com",
+            getfullName: function(){
+                console.log(info.fullName);
+                console.log(this.fullName);
+            },
+            cccd: {
+                fullName: "LÊ HẢI LÂM",
+                address: "Số 123, đường ABC",
+                getInforCCCD: function(){
+                    console.log(this.fullName);
+                }
+            }
+        };
+
+        info.getfullName();
+
+        info.cccd.getInforCCCD(); 
+    </script>
+
+</body>
+</html>

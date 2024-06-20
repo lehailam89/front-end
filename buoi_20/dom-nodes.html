@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <p>Nội dung của thẻ p</p> -->
+
+    <div id="ads"></div>
+
+    <script>
+        
+
+
+    </script>
+
+    <script>
+        const div = document.createElement("div");
+        const text = document.createTextNode("Quảng cáo 2...");
+        div.appendChild(text);
+        console.log(div);
+        
+        const divAds = document.querySelector("#ads");
+        divAds.appendChild(div);
+    </script>
+
+    <ul id="menu">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <button id="buttonAdd">Thêm mới</button>
+
+    <script>
+        const menu=document.querySelector('#menu');
+        const buttonAdd = document.querySelector('#buttonAdd');
+        
+        buttonAdd.onclick = function(){
+            const firstElement = menu.firstElementChild;
+
+
+            const newItem = document.createElement("li");
+            newItem.innerHTML = "Item mới";
+
+            menu.appendChild(newItem);
+
+            // menu.insertBefore(newItem, firstElement);
+        }
+
+        const listItem = menu.querySelectorAll("li");
+        //     console.log(listItem);
+
+        // listItem.forEach(item =>{
+        //     console.log(item);
+        //     item.onclick = function(){
+        //         menu.removeChild(item);
+        //     }
+        // })
+
+        listItem.forEach(item =>{
+            item.onclick = function(){
+                const newItem = document.createElement("li");
+            newItem.innerHTML = "Item mới";
+                menu.replaceChild(newItem, item);
+            }
+        })
+    </script>
+</body>
+
+</html>

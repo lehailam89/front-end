@@ -1,0 +1,153 @@
+{
+    "city": [
+        {
+            "key": 1,
+            "value": "Hà Nội"
+        },
+        {
+            "key": 2,
+            "value": "Hồ Chí Minh"
+        },
+        {
+            "key": 3,
+            "value": "Đà Nẵng"
+        }
+    ],
+    "tags": [
+        {
+            "key": 1,
+            "value": "HTML"
+        },
+        {
+            "key": 2,
+            "value": "CSS"
+        },
+        {
+            "key": 3,
+            "value": "JavaScript"
+        },
+        {
+            "key": 4,
+            "value": "Database"
+        },
+        {
+            "key": 5,
+            "value": "PHP"
+        },
+        {
+            "key": 6,
+            "value": "Python"
+        },
+        {
+            "key": 7,
+            "value": "Java"
+        }
+    ],
+    "jobs":[
+        {
+            "idCompany": 1,
+            "name": "FrontEnd Dev (Angular/ReactJS)",
+            "tags": [
+                "ReactJS",
+                "Angular",
+                "TypeScript"
+            ],
+            "salary": "1000",
+            "description": "FrontEnd Dev (Angular/ReactJS) làm việc tại Hà Nội"
+        },
+        {
+            "idCompany": 2,
+            "name": "BackEnd Dev (NodeJS)",
+            "tags": [
+                "NodeJS",
+                "ExpressJS",
+                "MongoDB"
+            ],
+            "salary": "1200",
+            "description": "BackEnd Dev (NodeJS) làm việc tại Hồ Chí Minh"
+        },
+        {
+            "idCompany": 3,
+            "name": "FullStack Dev (ReactJS/NodeJS)",
+            "tags": [
+                "ReactJS",
+                "NodeJS",
+                "MongoDB"
+            ],
+            "salary": "1500",
+            "description": "FullStack Dev (ReactJS/NodeJS) làm việc tại Đà Nẵng"
+        }
+    ],
+    "cv": [
+        {
+            "id": 1,
+            "idCompany": 1,
+            "idJob": 4,
+            "name": "Le Hai Lam",
+            "phone": "0123456789",
+            "email": "lehailam@gmail.com",
+            "statusRead": true,
+            "description": "Xin chào, tôi là Le Hai Lam, tôi muốn ứng tuyển vào vị trí FrontEnd Dev (Angular/ReactJS) tại công ty ABC",
+            "linkProject": "__",
+            "createAt": "29-06-2024 10:31:41",
+            "city": "Hà Nội"
+        },
+        {
+            "id": 2,
+            "idCompany": 2,
+            "idJob": 7,
+            "name": "Nguyễn Thị Hương",
+            "phone": "0987654321",
+            "email": "huongnt@example.com",
+            "statusRead": false,
+            "description": "Xin chào, tôi là Nguyễn Thị Hương, tôi quan tâm đến vị trí Backend Developer (Node.js) tại công ty XYZ",
+            "linkProject": "https://github.com/huongnt",
+            "createAt": "01-07-2024 15:20:12",
+            "city": "Hồ Chí Minh"
+        },
+        {
+            "id": 3,
+            "idCompany": 3,
+            "idJob": 2,
+            "name": "Trần Văn Đức",
+            "phone": "0368123456",
+            "email": "ducvantran@example.com",
+            "statusRead": true,
+            "description": "Xin chào, tôi là Trần Văn Đức, tôi đang tìm kiếm cơ hội làm việc với vị trí Full-stack Developer tại công ty QWE",
+            "linkProject": "https://github.com/ducvantran",
+            "createAt": "15-06-2024 09:45:27",
+            "city": "Đà Nẵng"
+        }             
+    ],
+    "company": [
+        {
+            "companyName": "Công ty ABC",
+            "Phone": "0231312312",
+            "email": "contact@abc.com",
+            "password": "123456",
+            "token": "abc",
+            "id": 1,
+            "quantityPeople": 8,
+            "description": "Công ty ABC chuyên về lĩnh vực phần mềm",
+            "detail": "Công ty ABC chuyên về lĩnh vực phần mềm, chúng tôi cần tuyển dụng FrontEnd Dev (Angular/ReactJS) với mức lương 1000$ tại Hà Nội",
+            "address": "Hà Nội",
+            "workingTime": "T2 - T6",
+            "website": "https://abc.com"
+
+        },
+        {
+            "companyName": "Công ty XYZ",
+            "phone": "0987654321",
+            "email": "info@xyzcompany.com",
+            "password": "xyzpassword",
+            "token": "xyztoken123",
+            "id": 2,
+            "quantityPeople": 20,
+            "description": "Công ty XYZ là một công ty công nghệ hàng đầu về phát triển phần mềm và giải pháp kỹ thuật số.",
+            "detail": "Công ty XYZ đang mở rộng và cần tuyển dụng Backend Developer (Node.js) có kinh nghiệm để tham gia vào dự án lớn tại Hồ Chí Minh.",
+            "address": "Hồ Chí Minh",
+            "workingTime": "Thứ Hai đến Thứ Sáu, từ 8:00 sáng đến 5:00 chiều",
+            "website": "https://xyzcompany.com"
+        }
+    ]
+}

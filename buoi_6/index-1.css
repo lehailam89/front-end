@@ -1,0 +1,22 @@
+.box{
+    background: #CCCCCC;
+    border: 0px solid #000;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;   
+}
+.slidebar1{
+    float :left;
+    width: 25%;
+}
+.slidebar2{
+    float: right;
+    width: 25%;
+}
+.article{
+    width: calc(50% - 60px);
+    float: left;
+}
+.footer{
+    clear: both;
+}

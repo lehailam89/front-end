@@ -1,0 +1,129 @@
+$color-red: rgba(255, 0, 0, 0.845);
+$color-green: green;
+$color-white: #fff;
+$color-gray: var(--gray);
+
+@mixin display-flex(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin flex-wrap() {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+%button{
+    background: rgb(190, 189, 189);
+    color: #000;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.button--red{
+    @extend %button;
+    background: $color-red;
+    color: #fff;    
+}
+
+.button--green{
+    @extend %button;
+    background: $color-green;
+    color: #fff;
+}
+
+.nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @include display-flex;
+    flex-wrap: wrap;
+    &__item {
+        margin: 0 15px;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $color-gray; 
+
+        &--active {
+            color: $color-green;
+        }
+        &--disabled {
+            color: #ddd; 
+            cursor: no-drop;
+        }
+        &:hover{
+            color: $color-red;  
+        }
+    }
+}
+
+.pagination{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @include display-flex;
+    @include flex-wrap;
+    &__item{
+        margin: 0 5px;
+        &--active{
+            color: color-red;
+        }
+    }
+
+    &__link{
+        color: $color-gray;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid #ddd;
+        padding: 6px 10px;
+        border-radius: 5px;
+    }
+    &__item--disabled &__link{
+        color: #ddd;
+        cursor: no-drop;
+    }
+
+    &__item--active &__link{
+        color: $color-red; 
+    }
+}
+
+.box {
+    position: relative;
+    background: yellow;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+
+    &__item{
+        background: orange;
+        width: 100px;
+        height: 50px;
+
+        &--one{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        &--two{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        &--three{
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+        &--four{
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+        }
+    }
+}

@@ -1,0 +1,216 @@
+
+/* Header */
+.header{
+    position:fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header .inner-main{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    display: flex;
+    padding: 25px 30px;
+    border-radius: 45px;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.header .inner-logo .img{
+    height: 30px;
+    width: auto;
+}
+.header .inner-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.header .inner-menu ul li{
+    margin-left: 25px;
+}
+.header .inner-menu ul li a{
+    font-size: 14px;
+    font-weight: 500;
+}
+.header .inner-menu ul li a:hover{
+    text-decoration: none;
+    color: var(--color-two);
+}
+
+.header .inner-menu .active{
+    color: var(--color-two);
+}
+/* End Header */
+
+/* Section-one */
+.section-one{
+    background: url("https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/banner-bg.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-one .inner-wrap{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.section-one .inner-title{
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.section-one .inner-desc{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* End Section-one */
+
+/* Section-two */
+.section-two{
+    margin-top: -220px;
+}
+.section-two .inner-box{
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+.section-two .inner-box .inner-icon{
+    background: var(--color-one);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 20px;
+}
+.section-two .inner-box .inner-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.section-two .inner-box .inner-title{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+.section-two .inner-box .inner-desc{
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.section-two .inner-box:hover .inner-icon{
+    background: var(--color-two);
+    transition: all 0.5s ease 0s;
+}
+/* End section-two */
+
+
+/* Section Three */
+.section-three{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.section-three .inner-image{
+    text-align: center;
+}
+.section-three .inner-image img{
+    max-width: 100%;
+    height: auto;
+}
+.section-three .inner-content .inner-title{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.section-three .inner-border-bottom{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+/* End Section Three */
+
+/* Section Four */
+.section-four .inner-image{
+    text-align: center;
+}
+.section-four{
+    margin-bottom: 80px;
+}
+/* End Section Four */
+
+
+/* Section Five */
+.section-five{
+    padding-bottom: 80px;
+
+}
+.section-five .inner-image{
+    width: 100%;
+    aspect-ratio: 4/3;  /*tỷ lệ của ảnh image*/
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section-five .inner-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-five .inner-content{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.section-five .inner-content .inner-title{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.section-five .inner-content .inner-desc{
+    font-size: 13px;
+}
+
+/* End Section Five */
+
+/* Talk to us */
+.talk-to-us{
+    background: #F2F2FE;
+    Padding: 80px 0;
+}
+.inner-title{
+    text-align: center;
+    font-size: 28px;
+    color: #1E1E1E;
+    font-weight: 500;
+}
+.talk-to-us .inner-form input, textarea{
+    border-radius: 25px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.talk-to-us .inner-form input:focus,textarea:focus{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.talk-to-us .inner-form input{
+    height: 50px;
+
+}
+.talk-to-us .inner-form textarea{
+    height: 150px;
+
+}
+
+/* End talk to us */
