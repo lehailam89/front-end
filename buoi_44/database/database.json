@@ -44,39 +44,63 @@
         }
     ],
     "jobs":[
-        {
-            "idCompany": 1,
-            "name": "FrontEnd Dev (Angular/ReactJS)",
-            "tags": [
+        [
+            {
+              "idCompany": 1,
+              "name": "FrontEnd Dev (Angular/ReactJS)",
+              "tags": [
                 "ReactJS",
                 "Angular",
                 "TypeScript"
-            ],
-            "salary": "1000",
-            "description": "FrontEnd Dev (Angular/ReactJS) làm việc tại Hà Nội"
-        },
-        {
-            "idCompany": 2,
-            "name": "BackEnd Dev (NodeJS)",
-            "tags": [
+              ],
+              "salary": "1000",
+              "description": "FrontEnd Dev (Angular/ReactJS) làm việc tại Hà Nội",
+              "status": true,
+              "createAt": "29-04-2024 21:22:11",
+              "id": 1,
+              "city": [
+                "Đà Nẵng"
+              ],
+              "updateAt": "30-04-2024 21:30:12"
+            },
+            {
+              "idCompany": 2,
+              "name": "BackEnd Dev (NodeJS)",
+              "tags": [
                 "NodeJS",
                 "ExpressJS",
                 "MongoDB"
-            ],
-            "salary": "1200",
-            "description": "BackEnd Dev (NodeJS) làm việc tại Hồ Chí Minh"
-        },
-        {
-            "idCompany": 3,
-            "name": "FullStack Dev (ReactJS/NodeJS)",
-            "tags": [
+              ],
+              "salary": "1200",
+              "description": "BackEnd Dev (NodeJS) làm việc tại Hồ Chí Minh",
+              "status": true,
+              "createAt": "29-04-2024 21:22:11",
+              "id": 2,
+              "city": [
+                "Hồ Chí Minh"
+              ],
+              "updateAt": "30-04-2024 21:30:12"
+            },
+            {
+              "idCompany": 3,
+              "name": "FullStack Dev (ReactJS/NodeJS)",
+              "tags": [
                 "ReactJS",
                 "NodeJS",
                 "MongoDB"
-            ],
-            "salary": "1500",
-            "description": "FullStack Dev (ReactJS/NodeJS) làm việc tại Đà Nẵng"
-        }
+              ],
+              "salary": "1500",
+              "description": "FullStack Dev (ReactJS/NodeJS) làm việc tại Đà Nẵng",
+              "status": false,
+              "createAt": "29-04-2024 21:22:11",
+              "id": 3,
+              "city": [
+                "Đà Nẵng"
+              ],
+              "updateAt": "30-04-2024 21:30:12"
+            }
+          ]
+          
     ],
     "cv": [
         {

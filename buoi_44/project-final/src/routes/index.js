@@ -7,7 +7,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Logout from "../pages/Logout";
 import Search from "../pages/Search";
-import Dashboard from "../pages/Dashboard";
+import Dashboard from "../pages/Dashboard"; 
 import InfoCompany from "../pages/InfoCompany";
 import JobManage from "../pages/JobManage";
 import CreateJob from "../pages/JobManage/CreateJob";
@@ -49,8 +49,12 @@ export const routes = [
                 element: <JobDetail />,
             },
             {
-                path: "company/:id",
+                path: "company",
                 element: <Company />,
+            },
+            {
+                path: "company/:id",
+                element: <CompanyDetail />,
             },
             {
                 path: "*",
